@@ -1,0 +1,149 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Detailed Information</h5>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+        <div class="row no-gutters">
+            <div class="col ">
+                <ul class="nav nav-pills card-header-pill">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="" routerLink="/account/profile" >Page 1</a>
+                    </li>
+          
+                    <li class="nav-item" >
+                        <a class="nav-link" href="" routerLink="/account/upload">Page 2</a>
+                    </li>
+          
+                    
+                  </ul>
+                 <br> 
+                <h6 class="card-subtitle mb-1 ">Personal Information</h6>
+                <hr class="mt-2 mb-3"> 
+                <div class="form-row">
+                    
+                    
+                    
+                    <div class="form-group col-md-6">
+                        <label for="profile-first-name">First Name<span class="req"></span></label>
+                        <input type="text" class="form-control" id="profile-first-name" placeholder="First Name" required title="Enter First Name">
+                   </div>
+                   <div class="form-group col-md-6">
+                        <label for="profile-last-name">Last Name</label>
+                        <input type="text" class="form-control" id="profile-last-name" placeholder="Last Name">
+                    </div>
+
+                        
+                            
+                </div>
+               
+                <div class="form-row">
+                    <div class="form-group col-md-4">  
+                             <label for="profile-dob">DOB</label>
+                             <input type="date" id="profile-dob" class="form-control" value="1998-02-27" required>
+                        
+                    </div>  
+                    
+                    <div class="form-group col-md-4">
+                              <label for="profile-gender">Gender</label>
+                              <select id="profile-gender" class="form-control form-control-select2">
+                                <option >Select..</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                              </select>
+                        
+                    </div>
+                    
+                    <div class="form-group col-md-4">                        
+                        <label for="profile-cityoforigin">City of Origin</label>
+                        <input type="email" class="form-control" id="profile-cityoforigin" placeholder="City of Origin">
+                    
+                    </div>
+                </div>    
+                
+                <div class="form-row">                    
+                    
+                    <div class="form-group col-md-6">
+                        <label for="profile-email">Email Address</label>
+                        <input type="email" class="form-control" id="profile-email" placeholder="Eg.xyz@abc.com">
+                    </div>                    
+                    
+                    
+                    <div class="form-group col-md-6">
+                        <label for="profile-phone">Phone Number</label>
+                        <input type="text" class="form-control" id="profile-phone" placeholder="Phone Number">
+                    </div>
+                    
+                </div>
+                
+                <br>
+                <h6 class="card-subtitle mb-1 ">Current Location</h6>
+                <hr class="mt-2 mb-3"> 
+                    
+                        <div class="form-row">                            
+                            <div class="form-group col-md-4">
+                                <label for="profile-state">State</label>
+                                <select id="profile-state" class="form-control form-control-select2">
+                                <option >Select..</option>
+                                <option value="maharashtra" selected>Maharashtra</option>
+                                <option value="delhi" >Delhi</option>
+                                </select>
+                                
+                            </div>
+                            
+                            
+                        <div class="form-group col-md-4">
+                            <label for="profile-area">Area</label>
+                            <select id="profile-area" class="form-control form-control-select2">
+                            <option >Select..</option>
+                            <option value="kothrud" selected>Kothrud</option>
+                                <option value="shivajinagar" >Shivajinagar</option>
+                            </select>
+                            
+                        </div>
+                            
+                            
+                        <div class="form-group col-md-4">
+                            <label for="profile-city">City</label>
+                            <input type="text" class="form-control" id="profile-city" placeholder="City">
+                        </div>
+                            
+                        </div>
+
+                <br>
+                <h6 class="card-subtitle mb-1 ">Educational Details</h6>
+                <hr class="mt-2 mb-3"> 
+                            
+                        <div class="form-row">                                   
+                            <div class="form-group col-md-4">
+                                <label for="profile-status">Status</label>
+                                <select id="profile-status" class="form-control form-control-select2">
+                                <option >Select..</option>
+                                <option value="hsc">Studying for HSC</option>
+                                <option value="ug">Studying for UG</option>
+                                <option value="ce">Completed UG and Studying for Competitive Exams</option>
+                                <option value="gs">General Studies</option>
+                                </select>
+                                
+                            </div>
+                            
+                            <div class="form-group col-md-4">
+                                <label for="profile-exampre"> Exam Preparing </label>
+                                <input type="text" class="form-control" id="profile-exampre" placeholder="Eg.B.Tech">
+                            </div>
+
+                            
+                            <div class="form-group col-md-4">                      
+                                <label for="profile-examdate">Exam Date</label>
+                                <input type="date" id="profile-examdate" class="form-control" value="2020-12-31" required>                                    
+                            </div> 
+                                            
+                        </div>        
+
+                <div class="form-group mt-5 mb-0">
+                    <button class="btn btn-primary" routerLink="/account/upload">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

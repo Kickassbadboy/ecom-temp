@@ -1,0 +1,168 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Detailed Information</h5>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+        <div class="row no-gutters">
+            <div class="col ">
+                <ul class="nav nav-pills card-header-pill">
+                    <li class="nav-item">
+                        <a class="nav-link " href="" routerLink="/account/profile" >Page 1</a>
+                    </li>
+          
+                    <li class="nav-item" >
+                        <a class="nav-link active" href="" routerLink="/account/upload">Page 2</a>
+                    </li>
+          
+                    
+                  </ul>
+                 <br> 
+                <h6 class="card-subtitle mb-1 ">Document Upload</h6>
+                <hr class="mt-2 mb-3"> 
+                <div class="form-row">
+                    <!-- proflie picture -->
+                    <div class="form-group col-md-6">
+                        <div class="card-body profile-card__body">
+                            <div class="profile-card">
+                                <img [src]="croppedImage" width="150" height="150"  style="border-radius: 50%;" > <br/>
+                            </div>
+                            <br>
+                            <div class="profile-card__edit"> 
+                                <label for="Upload" class="btn btn-secondary btn-secondary" data-toggle="modal" (click)="profilemodal.show()">Upload Profile</label>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- government id -->
+                    <div class="form-group col-md-6">
+                      <div class="card-body profile-card__body">
+                          <div class="profile-card">
+                              <img [src]="croppedImage1" width="200" height="150"  style="border-radius: 5%;" > <br/>
+                          </div>
+                          <br>
+                          <div class="profile-card__edit"> 
+                              <label for="Upload" class="btn btn-secondary btn-secondary" data-toggle="modal" (click)="govidmodal.show()">Upload Government Id (Image)</label>
+                              
+                          </div>
+                          <br>
+
+                        
+                          <div class="profile-card__edit"> 
+                            <label for="Uploadpdf"  class="btn btn-secondary btn-secondary" data-toggle="modal">Upload Government Id (Pdf)</label>
+                            
+                            <input id="Uploadpdf" type='file'   accept="application/pdf,application/vnd.ms-excel" style="display:none;"  >
+                            
+                          </div>
+                      </div>
+                  </div>
+
+                  <div bsModal #govidmodal="bs-modal" class="modal fade" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-success" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                           <!--govmodal-->
+                          <button type="button" class="close" (click)="govidmodal.hide()" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                
+                        <div class="modal-body">
+                        <h3>Choose Government Id</h3>
+
+                          <select id="upload-type" class="form-control form-control-select2">
+                          <option >Select Type..</option>
+                          <option value="aadhar">Aadhar Card</option>
+                          <option value="pan">Pan Card</option>
+                          <option value="passport">Passport</option>
+                          <option value="driving">Driving Licence</option>
+                          <option value="other" selected>Other</option>
+                          </select>
+                          <br>
+                      
+                        <label for="Select" class="btn btn-secondary btn-secondary" data-toggle="modal" (click)="govidmodal.show()">Upload</label>
+                        <input id="Select" type='file'  (change)="fileChangeEvent($event)" style="display: none;">
+                
+                         <image-cropper [imageChangedEvent]="imageChangedEvent"
+                          [maintainAspectRatio]="false"
+                          [aspectRatio]="1 / 1 "
+                          [resizeToWidth]="300"
+                          [resizeToHeight]="300" 
+                          format="png"
+                          (imageCropped)="imageCropped1($event)"
+                          (imageLoaded)="imageLoaded()"
+                          (cropperReady)="cropperReady()"
+                          (loadImageFailed)="loadImageFailed()"
+                        ></image-cropper> 
+                
+                          <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" onclick="location.href='#/sub1'">Review</button> -->
+                            <button type="submit" class="btn btn-success" data-toggle="modal" (click)="govidmodal.hide()" >Save</button>
+                          </div>
+                      </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+ 
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <div class="form-group mt-4 mb-0">
+                      <button class="btn btn-primary" routerLink="/account/profile">Previous</button>
+                    </div>
+                   
+                    <div class="form-group mt-4 mb-0">
+                      <button class="btn btn-primary">Save</button>
+                    </div>
+                  </div> 
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+ 
+  <div bsModal #profilemodal="bs-modal" class="modal fade" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-success" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+           <!--profilemodal-->
+          <button type="button" class="close" (click)="profilemodal.hide()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+        <h3>Choose Profile Picture</h3>
+        <label for="Select" class="btn btn-secondary btn-secondary" data-toggle="modal" (click)="profilemodal.show()">Upload</label>
+        <input id="Select" type='file'  (change)="fileChangeEvent($event)" style="display: none;">
+
+        <image-cropper [imageChangedEvent]="imageChangedEvent"
+          [maintainAspectRatio]="true"
+          [aspectRatio]="1 / 1 "
+          [resizeToWidth]="300"
+          [resizeToHeight]="300" 
+          format="png"
+          (imageCropped)="imageCropped($event)"
+          (imageLoaded)="imageLoaded()"
+          (cropperReady)="cropperReady()"
+          (loadImageFailed)="loadImageFailed()"
+        ></image-cropper>
+
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" onclick="location.href='#/sub1'">Review</button> -->
+            <button type="submit" class="btn btn-success" data-toggle="modal" (click)="profilemodal.hide()" >Save</button>
+          </div>
+      </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+     
+   
+              

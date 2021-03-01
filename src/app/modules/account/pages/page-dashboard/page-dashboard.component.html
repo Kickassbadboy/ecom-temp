@@ -1,0 +1,142 @@
+<div class="dashboard">
+    <div class="dashboard__profile card profile-card col-md-4">
+        <div class="card-body profile-card__body">
+            <div class="center">
+                <img src="./assets/images/avatars/avatar-3.jpg" width="120" height="120"  style="border-radius: 50%;" alt="">
+            </div>
+            
+            <br>
+            <div class="form">    
+                <div class="form-group center">
+                    <div class="address-card__row-title">Profile</div>
+                    
+               </div>
+            </div>  
+<!--                 
+                <div class="center">
+                    <img src="./assets/images/avatars/avatar-3.jpg" width="150" height="110"  style="border-radius: 5%;" alt="">
+                </div> -->
+            <br>
+            <div class="form">    
+                <div class="form-group ">
+                    <div class="address-card__row-title center">Government Id</div>
+                    <div class="address-card__name center">Aadhar Card</div>
+                    
+               </div>
+            </div>      
+        
+        
+            <!-- <div class="profile-card__name">Helena Garcia</div>
+            <div class="profile-card__email">stroyka@example.com</div> -->
+            <div class="profile-card__footer">
+                <a routerLink="/account/upload">Edit </a>
+            </div> 
+        </div>
+    </div>
+    <div class="dashboard__address card address-card address-card--featured col-md-8">
+        <!-- <div class="address-card__badge" *ngIf="address.default">Default Address</div> -->
+        <div class="address-card__body">
+            <div class="form-row">    
+                <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Name</div>
+                    <div class="address-card__name">{{ address.firstName + ' ' + address.lastName}}</div>
+               </div>
+               <div class="form-group col-md-6">
+                    <div class="address-card__row-title">DOB</div>
+                    <div class="address-card__name">DD/MM/YYYY</div>
+                </div>      
+            </div>
+            <div class="form-row">    
+                <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Gender</div>
+                    <div class="address-card__name">Female</div>
+               </div>
+               <div class="form-group col-md-6">
+                    <div class="address-card__row-title">City of Origin</div>
+                    <div class="address-card__name">Pune</div>
+                </div>      
+            </div>
+            <div class="form-row">    
+                <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Email Address</div>
+                    <div class="address-card__name">xyz@abc.com</div>
+               </div>
+               <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Phone Number</div>
+                    <div class="address-card__name">0123456789</div>
+                </div>      
+            </div>
+            <div class="form-row">    
+                <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Current Location</div>
+                    <div class="address-card__name">Pune,Kothrud</div>
+               </div>
+               <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Educational Details</div>
+                    <div class="address-card__name">Studying for UG,B.Tech</div>
+                </div>      
+            </div>
+            <div class="form-row">    
+                <div class="form-group col-md-6">
+                    <div class="address-card__row-title">Exam Date</div>
+                    <div class="address-card__name">DD/MM/YYYY</div>
+               </div>
+                    
+            </div>
+            
+            <!-- <div class="address-card__col">
+                <div class="address-card__row-title">Name</div>
+                <div class="address-card__name">{{ address.firstName + ' ' + address.lastName}}</div>
+                <div class="address-card__row-title">Address</div>
+                <div class="address-card__row">
+                    {{ address.country }}<br>
+                    {{ address.postcode }}, {{ address.city }}<br>
+                    {{ address.address }}
+                </div>
+                <div class="address-card__row">
+                    <div class="address-card__row-title">Phone Number</div>
+                    <div class="address-card__row-content">{{ address.phone }}</div>
+                </div>
+                <div class="address-card__row">
+                    <div class="address-card__row-title">Email Address</div>
+                    <div class="address-card__row-content">{{ address.email }}</div>
+                </div>
+            </div> -->
+            
+           
+            
+            
+             <div class="address-card__footer">
+                <a routerLink="/account/profile">Edit Information</a>
+            </div> 
+        </div>
+    </div>
+    <!-- <div class="dashboard__orders card">
+        <div class="card-header">
+            <h5>Recent Orders</h5>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-table">
+            <div class="table-responsive-sm">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Order</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let order of orders">
+                        <td><a href="">#{{ order.id }}</a></td>
+                        <td>{{ order.date }}</td>
+                        <td>{{ order.status }}</td>
+                        <td>{{ order.total|currencyFormat }} for {{ order.quantity }} item(s)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> -->
+</div>
