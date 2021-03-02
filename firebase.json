@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "/dist/stroyka/browser",
+    "public": "dist/stroyka/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
