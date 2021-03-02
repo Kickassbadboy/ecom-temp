@@ -69,7 +69,7 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
                     products$: this.shop.getFeaturedProducts(null, 8),
                 },
                 {
-                    name: 'Power Tools',
+                    name: 'Tranformers',
                     current: false,
                     products$: this.shop.getFeaturedProducts('power-tools', 8),
                 },
@@ -98,7 +98,7 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
                     products$: this.shop.getLatestProducts(null, 8),
                 },
                 {
-                    name: 'Power Tools',
+                    name: 'Tranformers',
                     current: false,
                     products$: this.shop.getLatestProducts('power-tools', 8),
                 },

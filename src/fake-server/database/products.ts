@@ -75,8 +75,8 @@ export const attributesDef: AttributeDef[] = [
 
 const productsDef: ProductDef[] = [
     {
-        slug: 'electric-planer-brandix-kl370090g-300-watts',
-        name: 'Electric Planer Brandix KL370090G 300 Watts',
+        slug: 'Transformer-kl370090g-300-watts',
+        name: 'Transformer KL370090G 300 Watts',
         price: 749,
         images: [
             'assets/images/products/product-1.jpg',
@@ -98,8 +98,8 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'undefined-tool-iradix-dps3000sy-2700-watts',
-        name: 'Undefined Tool IRadix DPS3000SY 2700 Watts',
+        slug: 'solar- engery panels',
+        name: 'solar- engery panels',
         price: 1019,
         images: [
             'assets/images/products/product-2.jpg',

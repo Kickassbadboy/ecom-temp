@@ -8,7 +8,7 @@ export const mobileMenu: MobileMenuItem[] = [
     ]},
 
     {type: 'link', label: 'Categories', url: '/shop/catalog', children: [
-        {type: 'link', label: 'Power Tools', url: '/shop/catalog', children: [
+        {type: 'link', label: 'Tranformers', url: '/shop/catalog', children: [
             {type: 'link', label: 'Engravers',           url: '/shop/catalog'},
             {type: 'link', label: 'Wrenches',            url: '/shop/catalog'},
             {type: 'link', label: 'Wall Chaser',         url: '/shop/catalog'},

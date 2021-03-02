@@ -68,8 +68,11 @@
             </div>
 
             <div class="dropcart__buttons">
-                <a class="btn btn-secondary" [routerLink]="root.cart()" (click)="closeMenu.emit()">View Cart</a>
-                <a class="btn btn-primary" [routerLink]="root.checkout()" (click)="closeMenu.emit()">Checkout</a>
+
+                <a class="btn btn-secondary" (click)="closeMenu.emit()"  >View Cart</a>
+                <a class="btn btn-primary" (click)="closeMenu.emit()" >Checkout</a>
+                <!-- <a class="btn btn-secondary" [routerLink]="root.cart()" (click)="closeMenu.emit()">View Cart</a>
+                <a class="btn btn-primary" [routerLink]="root.checkout()" (click)="closeMenu.emit()">Checkout</a> -->
             </div>
         </ng-container>
     </div>

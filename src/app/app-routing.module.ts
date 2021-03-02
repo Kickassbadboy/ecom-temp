@@ -10,7 +10,7 @@ import { PageOffcanvasCartComponent } from './pages/page-offcanvas-cart/page-off
 const routes: Routes = [
     // START / ONLY_FOR_DEMO_YOU_CAN_DELETE_IT
     {
-        path: 'home-two',
+        path: '',
         component: RootComponent,
         data: {
             headerLayout: 'compact',

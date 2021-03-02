@@ -12,7 +12,7 @@ const shopCategoriesDef: CategoryDef[] = [
         items: 272,
         children: [
             {
-                name: 'Power Tools',
+                name: 'Tranformers',
                 slug: 'power-tools',
                 image: 'assets/images/categories/category-1.jpg',
                 items: 370,
